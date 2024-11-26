@@ -1,6 +1,8 @@
-while True:
+x = input('Введите целое число: ')
+while not x.isdigit():
+    print("Ошибка")
     x = input('Введите целое число: ')
-    if not x.isdigit():
-        print("Ошибка")
-        continue
-    
+for y in range(10):
+        z = x.count(str(y))
+        if z:
+            print("Цифр", y, "в числе", z)
